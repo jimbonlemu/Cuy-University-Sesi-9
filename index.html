@@ -1,0 +1,86 @@
+<style>
+    *,html,body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .btn{
+        border: none;
+        padding: 10px;
+        font-weight: 200;
+        border-radius: 10px;
+    }
+
+    .btn-play{
+        background-color: crimson;
+         color: white;
+    }
+
+    .btn-minimize{
+        background-color:black;
+        color: white;
+
+    }
+    .container{
+        position: relative;
+        max-width: 50%;
+        margin: 0 auto;
+        border: 2px solid teal;
+    }
+
+    video{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        pad: 10px 12px;
+    }
+
+    .video-component{
+        position: absolute;
+        bottom: 0;
+        padding: 10ox 12px;
+
+    }
+    video-component{
+display: absolute;
+bottom: 0;
+
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <div class="container">
+        <video width="7720 ">
+            <source src="./assets/modelVideo.mkv" type="video/mkv" />
+        </video>
+        <div class="video-component">
+            <button onclick="play()" class="btn btn-play">PLAY</button>
+            <button onclick="pause()" class="btn btn-pause">PAUSE</button>
+            <button onclick="minimize()" class="btn btn-minimize">MINIMIZE</button>
+        </div>
+    </div>
+    
+    <script>
+        function play() {
+            console.log('playing video')
+        }
+        function pause() {
+            console.log('pause video')
+
+        }
+        function minimize() {
+            console.log('minimize video')
+
+        }
+    </script>
+</body>
+</html>
